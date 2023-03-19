@@ -10,5 +10,6 @@
     "jank"
   ],
   "author": "Ben Torkington <ben@torkington.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": { "url": "https://github.com/bentorkington/better-in-the-app"}
 }
