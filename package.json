@@ -3,13 +3,27 @@
   "version": "0.0.1",
   "description": "The first web framework that puts the web second",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/better-in-the-app/",
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "keywords": [
     "jank"
   ],
   "author": "Ben Torkington <ben@torkington.com>",
   "license": "ISC",
-  "repository": { "url": "https://github.com/bentorkington/better-in-the-app"}
+  "repository": {
+    "url": "https://github.com/bentorkington/better-in-the-app"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "markdown-it-anchor": "^9.2.0",
+    "sass": "^1.94.0"
+  }
 }
